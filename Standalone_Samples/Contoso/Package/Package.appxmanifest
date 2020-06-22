@@ -10,7 +10,7 @@
   <Identity
     Name="b031ef7b-fbca-43ce-a4c7-d6b4ff6b346e"
     Publisher="CN=Microsoft-Test"
-    Version="1.0.6.0" />
+    Version="1.0.8.0" />
 
   <Properties>
     <DisplayName>Package</DisplayName>
@@ -40,22 +40,11 @@
         <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Images\SplashScreen.png" />
       </uap:VisualElements>
-      <Extensions>
-        <uap:Extension Category="windows.shareTarget">
-          <uap:ShareTarget Description="Text">
-            <uap:SupportedFileTypes>
-              <uap:SupportsAnyFileType/>
-            </uap:SupportedFileTypes>
-          </uap:ShareTarget>
-        </uap:Extension>
-      </Extensions>
     </Application>
   </Applications>
 
   <Capabilities>
     <Capability Name="internetClient" />
     <rescap:Capability Name="runFullTrust" />
-    <Capability Name="internetClientServer"/>
-    <uap4:Capability Name="userDataTasks"/>
   </Capabilities>
 </Package>
